@@ -1,0 +1,35 @@
+h3 {
+	margin-top: 0px;
+}
+
+.search-results {
+	border: 2px solid lavender;
+	border-radius: 4px;
+	display: none;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding: 20px;
+}
+
+.search-results-table {
+	width: 100%;
+}
+
+.search-form {
+	border: 2px solid lavender;
+	border-radius: 4px;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+#map {
+	border: 2px solid lavender;
+	border-radius: 4px;
+	display: none;
+	height: 400px;
+	margin-top: 20px;
+	width: 100%;
+}
+
+:required {
+}
