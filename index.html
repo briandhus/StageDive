@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bands in Town</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- External Stylesheet -->
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-6">
+				<form class="search-form">
+					<div class="form-group row">
+						<label for="band-input" class="col-md-2 col-form-label">Band</label>
+						<div class="col-md-10">
+							<input type="text" class="form-control" id="band-input" placeholder="Band" data-error="Please input your favorite band." required>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="city-input" class="col-md-2 col-form-label">City</label>
+						<div class="col-md-10">
+							<input type="text" class="form-control" id="city-input" placeholder="City">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="city-input" class="col-md-2 col-form-label">State</label>
+						<div class="col-md-10">
+							<input type="text" class="form-control" id="state-input" placeholder="State">
+						</div>
+					</div>
+					<button type="submit" class="btn btn-default" id="search">Search</button>
+				</form>
+			</div>
+
+			<div class="col-md-6">
+				<div id="map">
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="search-results">
+					<div class="search-results-header"><h3>Search Results: <span id="search-band-input"></span></h3></div>
+					<div class="search-results-body">
+						<table class="table search-results-table">
+							<thead>
+								<tr>
+									<th>Date</th>
+									<th>City</th>
+									<th>Country</th>
+									<th>Venue</th>
+									<th>Lowest Fare</th>
+								</tr>
+							</thead>
+						</table>
+						<button type="button" class="btn btn-default" id="clear">Clear</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+
+	</div>
+	
+			
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Icons -->
+	<script src="https://use.fontawesome.com/75d0eb9449.js"></script>
+	<!-- Moment JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+	<!-- External JS -->
+	<script src="assets/javascript/logic.js"></script>
+	<!-- Google Maps -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeqkue5zvVyIEgSnJ4v3rdFixeW4j44Og&callback=initMap" async defer></script>
+</body>
+</html>
