@@ -88,7 +88,11 @@ $(document).ready(function() {
 			url: bandsInTownQueryURL,
 			method: "GET"
 		}).done(function(events) {
-			// console.log(response[0]);
+			console.log("response", events);
+				// var artistImage = $("<img>").attr("src", events.thumb_url);
+				// console.log("image", events.thumb_url);
+				// $("#artist-image").empty();
+				// $("#artist-image").append(artistImage);
 			$.each(events, function(index, event) {
 				var marker = new google.maps.Marker({
 					position: {lat: parseFloat(event.venue.latitude), lng: parseFloat(event.venue.longitude)},
@@ -121,6 +125,7 @@ $(document).ready(function() {
 				newRow.append(venue);
 				newRow.append(lowestFare);
 				$(".search-results-table").append(newRow);
+
 			})
 		})
 

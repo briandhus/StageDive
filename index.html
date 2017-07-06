@@ -6,30 +6,69 @@
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!-- External Stylesheet -->
+	<link href="https://fonts.googleapis.com/css?family=Ek+Mukta" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
 	<div class="container">
+		<!-- add nav here -->
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+	        <div class="container-fluid">
+	            <!-- Brand and toggle get grouped for better mobile display -->
+	            <div class="navbar-header">
+	                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+	                </button>
+	                <a class="navbar-brand page-scroll" href="#page-top">TBD Project Name</a>
+	            </div>
+
+	            <!-- Collect the nav links, forms, and other content for toggling -->
+	            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	                <ul class="nav navbar-nav navbar-right">
+	                    <li>
+	                        <a class="page-scroll" href="index.html">Home</a>
+	                    </li>
+	                    <li>
+	                        <a class="page-scroll" href="about.html">About</a>
+	                    </li>
+	                    <li>
+	                        <a class="page-scroll" href="contact.html">Contact</a>
+	                    </li>
+	                </ul>
+	            </div>
+	            <!-- /.navbar-collapse -->
+	        </div>
+	        <!-- /.container-fluid -->
+	    </nav>
+
+
+	    <div class="row">
+	    	<div class="col-md-12">
+	    		<div id="spacer"></div>
+	    	</div>
+	    	
+	    </div>
+
 
 		<div class="row">
 
-			<div class="col-md-6">
+			<div class="col-md-6" id="input-div">
 				<form class="search-form">
 					<div class="form-group row">
-						<label for="band-input" class="col-md-2 col-form-label">Band</label>
+						<label for="band-input" class="col-md-2 col-form-label"></label>
 						<div class="col-md-10">
 							<input type="text" class="form-control" id="band-input" placeholder="Band" data-error="Please input your favorite band." required>
 						</div>
 					</div>
 					<div class="form-group row">
-						<label for="city-input" class="col-md-2 col-form-label">City</label>
+						<label for="city-input" class="col-md-2 col-form-label"></label>
 						<div class="col-md-10">
 							<input type="text" class="form-control" id="city-input" placeholder="City">
 						</div>
 					</div>
 					<div class="form-group row">
-						<label for="city-input" class="col-md-2 col-form-label">State</label>
+						<label for="city-input" class="col-md-2 col-form-label"></label>
 						<div class="col-md-10">
 							<input type="text" class="form-control" id="state-input" placeholder="State">
 						</div>
@@ -47,7 +86,18 @@
 
 		<div class="row">
 			<div class="col-md-12">
-				<div class="search-results">
+				<div class="search-results" id="info">
+					<h3>Artist Info</h3>
+					<hr>
+					<div id="artist-image"></div>
+					<p id="artist-info">Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood.Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood.Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="search-results" id="results">
 					<div class="search-results-header"><h3>Search Results: <span id="search-band-input"></span></h3></div>
 					<div class="search-results-body">
 						<table class="table search-results-table">
@@ -56,7 +106,7 @@
 									<th>Date</th>
 									<th>City</th>
 									<th>Country</th>
-									<th>Venue</th>
+									<th class="venue">Venue</th>
 									<th>Lowest Fare</th>
 								</tr>
 							</thead>
