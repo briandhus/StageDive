@@ -97,7 +97,7 @@ $(document).ready(function() {
 						position: center,
 						map: map,
 						title: response.results[0].formatted_address,
-						icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png",
+						icon: "https://maps.google.com/mapfiles/ms/icons/red-dot.png",
 						animation: google.maps.Animation.DROP
 			        });
 			        markers.push(marker);
@@ -111,7 +111,7 @@ $(document).ready(function() {
 			$(".search-results").show();
 
 			// Display the artist's biography and picture
-			var artistInfoQueryURL = "http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=" + artistInput + "&api_key=" + artistInfoAPIKey + "&format=json";
+			var artistInfoQueryURL = "https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=" + artistInput + "&api_key=" + artistInfoAPIKey + "&format=json";
 			// console.log(artistInfoQueryURL);
 			$.ajax({
 				url: artistInfoQueryURL,
@@ -160,7 +160,7 @@ $(document).ready(function() {
 							position: {lat: eventLat, lng: eventLng},
 							map: map,
 							title: event.venue.name,
-							icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png",
+							icon: "https://maps.google.com/mapfiles/ms/icons/green-dot.png",
 							animation: google.maps.Animation.DROP
 						});
 						markers.push(marker);
