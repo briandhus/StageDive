@@ -1,28 +1,170 @@
 body{
 	/*background-color: #03030D;*/
 	background-image: url("../images/hands_large.jpg");
-  max-width: 100%;
+  	max-width: 100%;
 	background-size: cover;
 	font-family: 'Ek Mukta', sans-serif;
 	color: #FBFBFF;
 }
-
 h3 {
 	margin-top: 0px;
-	/*color: #FBFBFF;*/
 }
+
+#artist-input-error {
+	color: #FF0000;
+	display: none;
+	font-size: 12px;
+	margin-top: 5px;
+}
+#search {
+	border-radius: 0;
+	background: none;
+	color: #FBFBFF;
+}
+#clear {
+	border-radius: 0;
+	background: none;
+	color: #FBFBFF;
+}
+
+#map {
+	border: 2px solid #03030D;
+	border-radius: 0px;
+	display: none;
+	height: 400px;
+	margin-top: 20px;
+	width: 100%;
+	opacity: .7;
+}
+
+:required {
+}
+
+
+
+#info{
+/*	border: 2px solid lavender;*/
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(3, 3, 13, 0.5);
+
+}
+
+#results a{
+    color: orange !important;
+}
+
+
+#map {
+	border: 2px solid lavender;
+	border-radius: 4px;
+	display: none;
+	height: 400px;
+	margin-top: 20px;
+	width: 100%;
+}
+
+#artist-image {
+	height: 150px;
+	width: 150px;
+}
+
+#lowest-fair {
+	display: none;
+}
+
 
 #spacer{
 
 	height: 200px;
 }
-
-
-#band-input,
-#city-input,
-#state-input{
-	border-radius: 0;	
+#spacer-contact,
+#spacer-about{
+  height: 100px;
 }
+#info{
+/*	border: 2px solid lavender;*/
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 20px;
+
+}
+#artist-info{
+	height: 200px;
+    overflow-y: auto;
+    background-color: rgba(3, 3, 13, 0.5);
+
+}
+
+#contact,
+#about{
+	border-radius: 4px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding: 20px;
+	background-color: rgba(3, 3, 13, 0.5);
+
+}
+
+#about, 
+#contact-info,
+#jennie,
+#casey,
+#ken,
+#brian{
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(3, 3, 13, 0.5);
+  overflow: auto;
+}
+#jennie-pic,
+#casey-pic,
+#ken-pic,
+#brian-pic{
+  max-width: 120px;
+  float: right;
+  margin-bottom: 20px;
+
+}
+.search-form {
+	/*border: 2px solid lavender;*/
+	border-radius: 0px;
+	margin-top: 50px;
+	padding: 10px;
+	color: #FBFBFF;
+}
+.search-results {
+/*	border: 2px solid lavender;*/
+	border-radius: 4px;
+	display: none;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding: 20px;
+	  background-color: rgba(3, 3, 13, 0.5);
+}
+.search-results-bio {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.search-results-table {
+	width: 100%;
+}
+.form-control{
+	border-radius: 0px;
+}
+
+
+
+/*Navbar styling*/
 .navbar-default {
   background-color: white;
   border-color: rgba(34, 34, 34, 0.05);
@@ -108,102 +250,12 @@ h3 {
   }
 }
 
-.search-results {
-	/*border: 2px solid lavender;*/
-	border-radius: 4px;
-	display: none;
-	margin-bottom: 20px;
-	margin-top: 20px;
-	padding: 20px;
-	background-color: rgba(3, 3, 13, 0.5);
-}
-#contact,
-#about{
-	border-radius: 4px;
-	margin-bottom: 20px;
-	margin-top: 20px;
-	padding: 20px;
-	background-color: rgba(3, 3, 13, 0.5);
 
-}
 
-.search-results-table {
-	width: 100%;
-}
 
-.search-form {
-	/*border: 2px solid lavender;*/
-	border-radius: 4px;
-	margin-top: 50px;
-	padding: 10px;
-	color: #FBFBFF;
-}
 
-#search {
-	border-radius: 0;
-	background: none;
-	color: #FBFBFF;
-  float: left;
-  margin-left: 95px;
-  /*padding: 10px;*/
-	/*float: left;*/
-}
-#clear {
-	border-radius: 0;
-	background: none;
-	color: #FBFBFF;
-}
 
-#map {
-	border: 2px solid #03030D;
-	border-radius: 0px;
-	display: none;
-	height: 400px;
-	margin-top: 20px;
-	width: 100%;
-	opacity: .7;
-}
 
-:required {
-}
-
-#artist-image{
-
-	width: 200px;
-	height: 200px;
-	border: 2px solid #03030D;
-	overflow: auto;
-	float: right;
-}
-
-#info{
-/*	border: 2px solid lavender;*/
-  width: 100%;
-  border-radius: 4px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  padding: 20px;
-  background-color: rgba(3, 3, 13, 0.5);
-
-}
-#artist-info{
-	height: 200px;
-    overflow-y: auto;
-
-}
-#results a{
-    color: orange !important;
-}
-
-#about, 
-#contact-info{
-  width: 100%;
-  border-radius: 4px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  padding: 20px;
-  background-color: rgba(3, 3, 13, 0.5);
-}
 
 
 
