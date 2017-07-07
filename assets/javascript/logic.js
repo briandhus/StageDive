@@ -11,7 +11,7 @@ var corsLink = "https://cors-anywhere.herokuapp.com/";
 var artistInfoAPIKey = "a93674405c17c38cdbf92c8fcd42acea";
 
 // Sandbox Amadeus
-var sandboxAPIKey = "9m6yYgeGs0WEqKpdcyFWPdo0yr2EIok4";
+var sandboxAPIKey = "sriDxJiqdX32WWOubfP1JEtVgwuw100I";
 
 //------- Google Maps & Autocomplete Form Setup -------
 var map;
