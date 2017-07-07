@@ -47,6 +47,8 @@ $(document).ready(function() {
 
 		// Remove data from previous searches
 		completeRecords = [];
+		userLat = "";
+		userLng = "";
 		$("#artist-image").removeAttr("src");
 		$("#artist-bio").empty();
 		$(".search-results-table tr td").remove();
