@@ -2,16 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Bands in Town</title>
+	<title>Stagedive</title>
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!-- External Stylesheet -->
-	<link href="https://fonts.googleapis.com/css?family=Ek+Mukta" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
-	<div class="container">
+<div class="container">
 		<!-- add nav here -->
 		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
 	        <div class="container-fluid">
@@ -20,13 +18,13 @@
 	                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 	                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
 	                </button>
-	                <a class="navbar-brand page-scroll" href="#page-top">TBD Project Name</a>
+	                <a class="navbar-brand page-scroll" href="#page-top">Stagedive</a>
 	            </div>
 
 	            <!-- Collect the nav links, forms, and other content for toggling -->
 	            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	                <ul class="nav navbar-nav navbar-right">
-	                    <li>
+	                	<li>
 	                        <a class="page-scroll" href="index.html">Home</a>
 	                    </li>
 	                    <li>
@@ -41,36 +39,27 @@
 	        </div>
 	        <!-- /.container-fluid -->
 	    </nav>
+	</div>
 
+	<div class="row">
+		<div class="col-md-12" id="spacer">		
+	</div>
 
-	    <div class="row">
-	    	<div class="col-md-12">
-	    		<div id="spacer"></div>
-	    	</div>
-	    	
-	    </div>
-
+	<div class="container">
 
 		<div class="row">
 
-			<div class="col-md-6" id="input-div">
+			<div class="col-md-6">
 				<form class="search-form">
 					<div class="form-group row">
-						<label for="band-input" class="col-md-2 col-form-label"></label>
 						<div class="col-md-10">
-							<input type="text" class="form-control" id="band-input" placeholder="Band" data-error="Please input your favorite band." required>
+							<input type="text" class="form-control" id="artist-input" placeholder="Band">
+							<span id="artist-input-error">* Please input an artist.</span>
 						</div>
 					</div>
 					<div class="form-group row">
-						<label for="city-input" class="col-md-2 col-form-label"></label>
 						<div class="col-md-10">
-							<input type="text" class="form-control" id="city-input" placeholder="City">
-						</div>
-					</div>
-					<div class="form-group row">
-						<label for="city-input" class="col-md-2 col-form-label"></label>
-						<div class="col-md-10">
-							<input type="text" class="form-control" id="state-input" placeholder="State">
+							<input type="text" class="form-control" id="autocomplete" placeholder="Enter Your Location">
 						</div>
 					</div>
 					<button type="submit" class="btn btn-default" id="search">Search</button>
@@ -86,19 +75,18 @@
 
 		<div class="row">
 			<div class="col-md-12">
-				<div class="search-results" id="info">
-					<h3>Artist Info</h3>
-					<hr>
-					<div id="artist-image"></div>
-					<p id="artist-info">Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood.Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood.Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood. Passersby were amazed by the unusually large amounts of blood.</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-12">
-				<div class="search-results" id="results">
-					<div class="search-results-header"><h3>Search Results: <span id="search-band-input"></span></h3></div>
+				<div class="search-results">
+					<div class="search-results-header"><h3>Search Results: <span id="search-artist-input"></span></h3></div>
+					<div class="search-results-bio">
+						<div class="row">
+							<div class="col-md-2">
+								<img alt="Artist Image" class="img-thumbnail" id="artist-image">
+							</div>
+							<div class="col-md-10">
+								<p id="artist-bio"></p>
+							</div>
+						</div>
+					</div>
 					<div class="search-results-body">
 						<table class="table search-results-table">
 							<thead>
@@ -106,8 +94,8 @@
 									<th>Date</th>
 									<th>City</th>
 									<th>Country</th>
-									<th class="venue">Venue</th>
-									<th>Lowest Fare</th>
+									<th>Venue</th>
+									<th id="lowest-fair">Lowest Air Fare (USD)</th>
 								</tr>
 							</thead>
 						</table>
@@ -130,6 +118,6 @@
 	<!-- External JS -->
 	<script src="assets/javascript/logic.js"></script>
 	<!-- Google Maps -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeqkue5zvVyIEgSnJ4v3rdFixeW4j44Og&callback=initMap" async defer></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeqkue5zvVyIEgSnJ4v3rdFixeW4j44Og&libraries=places&callback=initMap" async defer></script>
 </body>
 </html>
